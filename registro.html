@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almingo</title>
+    <meta name="description"content="Pagina de una empresa"/>
+    <meta name="keywords" content="empresa, desarrollo de software y apps para empresas y particulares."/>
+    <link rel="stylesheet" href="inicio.css"/>
+</head>
+<body>
+    <header>
+       <nav class="navegador">
+        <ul class="menu">
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li class="logo"><img src="images/pandaLogo.png" alt="logo de la empresa"></li>
+            <li><a href="Proyectos.html">Proyectos</a></li>    
+            <li><a href="registro.html">Registro</a></li> 
+        </ul>
+       </nav>
+    </header>
+    <main>
+        <h2>Registro</h2>
+
+        <form id="registroFormulario">
+            <div class="parFormulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" />
+            </div>
+            <div class="parFormulario">
+                <label for="apellido1">Apellido 1:</label>
+                <input type="text" id="apellido1" name="apellido1" placeholder="Escribe tu Apellido 1" />
+            </div>
+            <div class="parFormulario">
+                <label for="apellido2">Apellido 2:</label>
+                <input type="text" id="apellido2" name="apellido2" placeholder="Escribe tu Apellido 2" />
+            </div>
+            <div class="parFormulario">
+                <label>Correo electronico:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" />
+            </div>
+            <div class="parFormulario">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </div>
+            <div class="parFormulario">
+                <label for="fechaNacimiento">Fecha nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" />
+                
+            </div>
+            <input type="submit" id="enviar" value="Registrar" />
+        </form>
+    </main>
+</body>
+</html>
