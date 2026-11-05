@@ -1,8 +1,10 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #ffffff;                         
+    padding: 0;                      
+}
+body{
+    background-color: #ffffff;   
 }
 main{
     display: flex;
@@ -14,11 +16,11 @@ nav{
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 70px;
     position: relative;
     align-items: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .menu{
     display: flex;
@@ -204,6 +206,127 @@ h2{
     border-color: transparent;
     background:linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to bottom right, #a8d98b, #0e503d) border-box;
 }
-.footerImagen img{
+.multiImagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1280px;
+    gap: 25px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-left: 1px solid #E2E7EC;
+    border-right: 1px solid #E2E7EC;
+}
+.imagen3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid #E2E7EC;
+    border-right: 1px solid #E2E7EC;
+    border-top: 1px solid #E2E7EC;
+    border-bottom: 1px solid #E2E7EC;
+    border-radius: 10px;
+    transition: 0.2s;
+    width: 393px;
+    height: 500px;
+}
+.imagen3 img{
+    width: 393px;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.imagen3:hover{
+    transform: scale(1.02);
+    border-color: transparent;
+    background:linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to bottom right, #a8d98b, #0e503d) border-box;
+}
+.imagen3 > p{
+    margin-top: 20px;
+    text-align: center;
+}
+.contenedorCita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto 0;
+    width: 1280px;
+}
+.Cita{
+    position: absolute;
+    opacity: 0;
+    animation: transicion 45s linear infinite;
+}
+.Cita:nth-child(2){
+    animation-delay: -5s;
+}
+.Cita:nth-child(3){
+    animation-delay: -10s;
+}
+.Cita:nth-child(4){
+    animation-delay: -15s;
+}
+.Cita:nth-child(5){
+    animation-delay: -20s;
+}
+.Cita:nth-child(6){
+    animation-delay: -25s;
+}
+.Cita:nth-child(7){
+    animation-delay: -30s;
+}
+.Cita:nth-child(8){
+    animation-delay: -35s;
+}
+.Cita:nth-child(9){
+    animation-delay: -40s;
+}
+.Cita h2{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 60px;
+    color: #0e503d;
+    opacity: 1;
+}
+.Cita p{
+    opacity: 0.6;
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+@keyframes transicion {
+    0%, 10% {
+        opacity: 1;
+    }
+
+    11%, 100% {
+        opacity: 0;
+    }
+}
+.reveal {
+    animation: aparecer linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contenedorFooter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
+    margin-top: 350px;
+    background-color: #0e503d;
+}
+.imagenFooter img{
+    width: 1920px;
 }
