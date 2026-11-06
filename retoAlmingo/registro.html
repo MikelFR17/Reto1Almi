@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almingo</title>
+    <meta name="description" content="Company website"/>
+    <meta name="keywords" content="company, software development and apps for businesses and individuals."/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="registro.css"/>
+</head>
+<body>
+    <header>
+       <nav class="navegador">
+        <ul class="menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="servicios.html">Services</a></li>
+            <li class="logo"><img src="images/pandaLogo.png" alt="Company logo"></li>
+            <li><a href="Proyectos.html">Projects</a></li>    
+            <li class="active"><a href="registro.html">Registration</a></li> 
+        </ul>
+       </nav>
+    </header>
+    <main class="registro">
+        <h2>Registration</h2>
+
+        <form id="registroFormulario">
+            <div class="parFormulario">
+                <label for="nombre">First name:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Enter your first name" />
+            </div>
+            <div class="parFormulario">
+                <label for="apellido1">Last name:</label>
+                <input type="text" id="apellido1" name="apellido1" placeholder="Enter your last name" />
+            </div>
+            <div class="parFormulario">
+                <label for="apellido2">Second last name:</label>
+                <input type="text" id="apellido2" name="apellido2" placeholder="Enter your second last name" />
+            </div>
+            <div class="parFormulario">
+                <label>Email address:</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" />
+            </div>
+            <div class="parFormulario">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </div>
+            <div class="parFormulario">
+                <label for="fechaNacimiento">Date of birth:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" />
+                
+            </div>
+            <input type="submit" id="enviar" value="Register" />
+        </form>
+    </main>
+    <footer>
+        <div class="contenedorFooter">
+            <div class="logoFooter">
+                <img src="images/pandaLogo.png" alt="Almingo logo">
+            </div>
+            <div class="seccionFooter">
+                <a href="index.html">Home</a>
+                <a href="servicios.html">Services</a>
+                <a href="Proyectos.html">Projects</a>
+                <a href="registro.html">Registration</a>
+            </div>
+            <div class="correo">
+                <p>almingo@gmail.com</p>
+            </div>
+            <div class="imagenFooter">
+                <img src="images/FooterInvertido.png" alt="Inverted Almingo image">
+            </div>
+            <div class="copyright">
+                <p>© 2026 Almingo. All rights reserved. </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
