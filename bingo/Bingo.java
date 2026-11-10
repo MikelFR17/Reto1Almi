@@ -1,3 +1,4 @@
+package bingo;
 public class Bingo {
     private static final String RUTA_POR_DEFECTO = "C:/bingo";
 

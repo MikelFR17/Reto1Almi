@@ -1,3 +1,4 @@
+package bingo;
 public class Jugador {
     private Sala sala;
     private Teclado teclado;
@@ -33,9 +34,17 @@ public class Jugador {
         sala.agregarJugador(nombre);
 
         boolean fin = false;
+        String anterior = "";
         while (!fin) {
-            // Redibujamos la pantalla en cada vuelta (cada medio segundo)
-            dibujar();
+            // Resumen de lo que se ve en pantalla
+            String actual = sala.getEstado() + "|" + sala.getBolas().length + "|"
+                    + sala.getGanador("BINGO") + "|" + totalCantadas;
+
+            // Solo dibujamos si ha cambiado algo
+            if (!actual.equals(anterior)) {
+                anterior = actual;
+                dibujar();
+            }
 
             if (sala.getEstado().equals("FIN")) {
                 System.out.println();
@@ -47,6 +56,7 @@ public class Jugador {
                 String orden = teclado.leerLinea().trim().toUpperCase();
                 if (orden.equals("L")) {
                     cantarLinea();
+                    anterior = ""; // para que se repinte despues de cantar
                 }
             }
             Pantalla.pausa(500);

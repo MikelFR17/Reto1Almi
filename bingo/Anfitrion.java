@@ -1,3 +1,4 @@
+package bingo;
 import java.util.Random;
 
 public class Anfitrion {

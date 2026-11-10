@@ -14,8 +14,8 @@ Bingo multijugador por terminal en Java para ALMINGO S.L. Los cantos se validan 
 ## Compilar y ejecutar
 
 ```
-javac *.java
-java Bingo
+javac bingo/*.java
+java bingo.Bingo
 ```
 
 Los equipos se comunican por la carpeta compartida (por defecto `C:/bingo`). En los demás equipos se escribe la ruta de red, por ejemplo `\\SERVIDOR\bingo`.
