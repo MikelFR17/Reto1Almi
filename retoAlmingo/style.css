@@ -25,14 +25,18 @@ nav{
 .menu{
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    width: 100%;
     align-items: center;
-    justify-content: center;
-    margin: 0;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 0;
     font-size: 20px;
     list-style: none;
+}
+.menu li{
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 .menu a::after{
     content: "";
@@ -49,6 +53,9 @@ nav{
 }
 .menu a:hover{
     opacity: 0.8;
+}
+.menu li.logo{
+    flex: 0 0 100px;
 }
 .menu .logo img{
     display: block;
