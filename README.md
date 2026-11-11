@@ -1,6 +1,6 @@
 # Reto1Almi · Sección Web (Almingo)
 
-Página web corporativa de **Almingo**, una empresa ficticia de desarrollo web y aplicaciones para empresas y particulares. Está creada íntegramente con **HTML5 y CSS3**, sin JavaScript, y forma parte del **Reto 1 de Almi**.
+Página web corporativa de **Almingo**, una empresa ficticia de desarrollo web y aplicaciones para empresas y particulares. Está creada íntegramente con **HTML5 y CSS3**, y forma parte del **Reto 1 de Almi**.
 
 Todo el código de esta sección está en la rama `web`, dentro de la carpeta `retoAlmingo/`.
 
@@ -61,19 +61,6 @@ Reto1Almi/
 3. Abre `index.html` en tu navegador o usa la extensión **Live Server** de VS Code.
 
 > 💡 Se recomienda usar un navegador basado en Chromium (Chrome, Edge) para ver correctamente las animaciones de aparición al hacer scroll.
-
-## 🌿 Ramas
-
-| Rama   | Contenido                                |
-|--------|------------------------------------------|
-| `main` | Versión base del repositorio             |
-| `web`  | Desarrollo de la página web (esta rama)  |
-
-## 🔮 Posibles mejoras
-
-- Hacer el diseño totalmente responsive (actualmente usa anchos fijos de 1280 px).
-- Conectar el formulario de registro con un backend.
-- Añadir una página de contacto.
 
 ## 👤 Autor
 
