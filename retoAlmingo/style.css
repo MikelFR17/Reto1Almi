@@ -72,32 +72,44 @@ li a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
     width: 100%;
     background-color: #0e503d;
+}
+.contenedorFooter::before{
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    width: 1820px;
+    border-top: 2px solid white;
 }
 .imagenFooter img{
     width: 1920px;
 }
 .logoFooter{
-    width: 150px;
+    flex: 0 0 150px;
 }
 .logoFooter img{
     height: 100px;
     width: 100px;
-    margin-top: 50px;
+    margin-top: 75px;
     margin-left: 50px;
 }
 .seccionFooter{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
     margin-top: 55px;
-    margin-left: 90px;
-    gap: 10px;
+    margin-left: 0;
+    gap: 200px;
 }
 .seccionFooter > a{
-    align-self: flex-start;
+    margin-top: 50px;
+    align-items: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
 }
 .seccionFooter a::after{
@@ -117,10 +129,10 @@ li a{
     display: flex;
     margin-left: auto;
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 110px;
     color: white;
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 25px;
 }
 .copyright{
     display: flex;

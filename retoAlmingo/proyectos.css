@@ -21,7 +21,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     width: 1280px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -34,6 +34,8 @@ h3{
     align-items: center;
     box-sizing: border-box;
     text-align: center;
+    animation: aparecer 1.8s ease both;
+    transition: transform 0.2s;
 }
 .proyectoprincipal img{
     display: block;
@@ -69,6 +71,25 @@ h4{
     align-items: center;
     box-sizing: border-box;
     text-align: center;
+    animation: aparecer 1.8s ease both;
+    transition: transform 0.2s;
+}
+
+.categoriaproyecto > :nth-child(1) { animation-delay: 0.1s; }
+.categoriaproyecto > :nth-child(2) { animation-delay: 0.2s; }
+.categoriaproyecto > :nth-child(3) { animation-delay: 0.3s; }
+.categoriaproyecto > :nth-child(4) { animation-delay: 0.4s; }
+.categoriaproyecto > :nth-child(5) { animation-delay: 0.5s; }
+.categoriaproyecto > :nth-child(6) { animation-delay: 0.6s; }
+
+.proyectoprincipal:hover,
+.proyecto:hover {
+    transform: scale(1.02);
+}
+
+@keyframes aparecer {
+    from { opacity: 0; translate: 0 30px; }
+    to   { opacity: 0.85; translate: 0 0; }
 }
 
 .proyecto h3 {

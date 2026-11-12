@@ -124,10 +124,10 @@ h2{
     border-top-right-radius: 10px;
 }
 .imagen1 p{
-    width: 400px;
+    width: 600px;
     margin-top: 20px;
-    align-self: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     margin-left: 10px;
 }
 .imagen2 img{
@@ -139,8 +139,8 @@ h2{
 .imagen2 p{
     width: 300px;
     margin-top: 20px;
-    align-self: flex-end;
-    text-align: right;
+    align-items: center;
+    text-align: center;
     margin-right: 10px;
 }
 .imagen1:hover, .imagen2:hover{
@@ -170,7 +170,7 @@ h2{
     border-radius: 10px;
     transition: 0.2s;
     width: 393px;
-    height: 500px;
+    height: 475px;
 }
 .imagen3 img{
     width: 393px;
@@ -249,7 +249,7 @@ h2{
 .reveal {
     animation: aparecer linear both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
 }
 @keyframes aparecer {
     from {
@@ -265,7 +265,7 @@ h2{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #0e503d;
+    background: linear-gradient(to bottom, #07251c, #0e503d);
     margin-top: 450px;
 }
 .contenedorFAQ{
@@ -275,7 +275,8 @@ h2{
     width: 1280px;
     margin: 0 auto;
     margin-top: 100px;
-    background-color: #0e503d;
+    background-color: transparent;
+    margin-bottom: 100px;
 }
 .contenedorFAQ > h2{
     align-self: center;
