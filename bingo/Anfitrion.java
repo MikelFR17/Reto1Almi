@@ -2,7 +2,7 @@ package bingo;
 import java.util.Random;
 
 public class Anfitrion {
-    private static final int SEGUNDOS_ENTRE_BOLAS = 2;
+    private static final int SEGUNDOS_ENTRE_BOLAS = 5;
     private static final int SEGUNDOS_FINAL = 60;
     private static final int TOTAL_BOLAS = 30;
     private static final String NOMBRE = "Anfitrion";
